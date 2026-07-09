@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <title>Portfolio section</title>
+        <style>
+            body{
+                font-family: georgia, serif;
+            }
+            .project-container{
+                display: flex;
+                gap: 25px;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            .Project-card{
+                border: 5px solid rebeccapurple;
+                border-radius: 10px;
+                padding: 20px;
+                width: 380px;
+            }
+            .Project-card h2{
+                color: aqua;
+                margin-bottom: 15px;
+            }
+            .project-card{
+                background-color: white;
+                transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .project-card:hover{
+                background-color: cornflowerblue;
+                transform: translate(-9px);
+                box-shadow: 0 13px 25px blueviolet;
+            }
+            .Project-card .project-name{
+                color: black;
+                margin-bottom: 50px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .Project-card p{
+                color: black;
+                margin-bottom: 13px;
+                line-height: 1.5;
+                font-size: 15px;
+                
+            }
+            .project-card p strong{
+                font-weight: bold;
+            }
+            .project-box{
+                color: black;
+            }
+            h2{
+                color: black;
+                border-bottom: 2px red;
+                display: inline;
+               
+                padding-bottom: 10px;
+                width: 90px;
+            }
+            .results-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+            }
+            .result-box{
+                background-color: burlywood;
+                border-radius: 15px;
+                padding: 30px;
+                width: 280px;
+                
+                margin-bottom: 40px;
+            }
+             .percent{
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .result-box p{
+                margin: 0;
+                color: blue;
+
+            }
+             nav{
+            background:#0A3D62;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:18px 60px;
+        }
+
+        .logo{
+            color:white;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:30px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+        }
+
+        nav ul li a:hover{
+            color:#FFD700;
+        }
+        </style>
+    </head>
+    <body>
+        <nav>
+      <div class="logo">MIW Solutions</div>
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+         <li><a href="Aboutus.html">AboutUs</a></li>
+        <li><a href="techstack.html">Techstack</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="inquiry.html">Inquiry</a></li>
+        <li><a href="careerSection.html">careersection</a></li>
+          <li><a href="LoginPage.html" class="btn1">Login</a></li>
+      </ul>
+    </nav>
+            <br>
+            <br>
+            
+            <section id="portfolio">
+                <div class="top-section">
+        <center><h1 style="color: blue;">Portfolio section</h1></center>
+        <center><p>show case of completed projects</p>
+        <p>Heare are the some of the projects we worked on it</p></center>
+        </div>
+        <center>
+            
+        <div class="Project-container">
+            <div class="Project-card">
+
+        <h1 style="color: black">Project-1</h1>
+        <div class="project-name">Fin flow</div>
+        <p><b>Category:</b>Corporate_company_website</p>
+        <p><b>Problem:</b>many companies do not have a professional online presence customers often structure to find important information</p>
+        <p><b>Solution:</b>Develop a coroporate company website that displays company details,services,contactinformation this helps customers easily access information and contact easily access information and contact company</p>
+        <p><b>Result:</b>It provides a company information services,contact details,and feedback form in a  simple and user friendly way</p>
+        <p><b>Tech used:</b>Html and Css</p>
+        </div>
+        <div class="Project-card">
+            <h1 style="color: black;">project-2</h1>
+            <div class="project-name">Medlink</div>
+            <p><b>Category:</b>Health care checkup</p>
+            <p><b>Problem:</b>people often forget to schedule regular health check up and find it difficult to access health information in one place</p>
+        <p><b>Solution:</b>Develop a health check up website where users can view health services book check-up appointments and access basic health information easily</p>
+        <p><b>Result:</b>some of the missed appointmnets so they can drop message there in groups</p>
+        <p><b>Tech used:</b>Html,css</p>
+        </div>
+        <div class="Project-card">
+            <h1 style="color: black;">Project-3</h1>
+            <div class="project-name">cartpiolt</div>
+            <p><b>Catergory:</b>E-commerce</p>
+            <p><b>Problem:</b>customers facing the tracking order so these is the isssue with custmers so supporting team got many class like where is my oder how can i receive my order </p>
+        <p><b>Solution:</b>The solution is getting ready we built a live tracking for your orders</p>
+        <p><b>Result:</b> customers can easily check their real time status of their orders such as order conformed packed  shipped outfor delivery</p>
+        <p><b>Tech used:</b>Html and Css</p>
+        </div>
+        <br>
+        <br>
+        </center>
+        <center><h2>project results</h2>
+            <br>
+            <br>
+            <br>
+        <div claa="result-container">
+            <div class="result-box">
+                <div class="percent">40%</div>
+                <p>increase in websites</p>
+            </div>
+            <div class="result-box">
+                <div class="percent">50%</div>
+                <p>increase in customer inquries</p>
+            </div>
+            <div class="result-box">
+                <div class="percent">100%</div>
+                <p>responsive websites design across the devices</p>
+            </div>
+            </div>
+            </center>
+            </section>
+            
+            </body>
+            </html>
