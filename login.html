@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            min-height: 100vh;
+            background: whitesmoke;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        nav{
+            background:#0A3D62;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:18px 60px;
+            border-bottom: #EAF6FF;
+            border-bottom-style: solid;
+            width: 100%;
+        }
+
+        .logo{
+            color:white;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:30px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+        }
+
+        nav ul li a:hover{
+            color:#FFD700;
+        }
+
+        .main {
+            background-color: antiquewhite;
+            border-radius: 15px;
+            box-shadow:  0 10px 30px black;
+            padding: 30px 40px;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: black;
+            margin-top: 0;
+        }
+
+        h3 {
+            color:black;
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            width: 100%;
+            margin-bottom: 8px;
+            text-align: left;
+            color: black;
+            font-weight: bold;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 2px solid white;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: black;
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 12px;
+            top: 40px;
+            cursor: pointer;
+            font-size: 13px;
+            color: blue;
+            user-select: none;
+        }
+
+        button {
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            background-color: aquamarine;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.1s;
+        }
+
+        button:hover {
+            background-color: aquamarine;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        p {
+            margin-top: 20px;
+            color: dimgrey;
+        }
+
+        .message {
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            display: none;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .error {
+            background-color: antiquewhite;
+            color: red;
+            border: 1px solid pink;
+            display: block;
+        }
+
+        .success {
+            background-color: greenyellow;
+            color: antiquewhite;
+            border: 1px solid greenyellow;
+            display: block;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <nav>
+      <div class="logo">MIW Solutions</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="CaseStudy.html">CaseStudy</a></li>
+        <li><a href="login.html">Login</a></li>
+    
+      </ul>
+    </nav>
+    <div class="main">
+        <h1>Micro InfoWeb</h1>
+        <h3>Enter Your Login Credentials</h3>
+
+        <div id="feedbackMessage" class="message"></div>
+
+        <form id="loginForm" novalidate>
+            <div class="input-group">
+                <label for="username">UserName:</label>
+                <input type="text" id="username" placeholder="Enter your UserName" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                <span class="password-toggle" id="togglePassword">Show</span>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p>Not registered?
+            <a href="#" style="text-decoration: none; color: blue;">Create an account</a>
+        </p>
+    </div>
+
+    
+</body>
+</html>
