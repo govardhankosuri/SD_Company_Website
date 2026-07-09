@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inquiry Form</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    body {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background: #f4f7fc;
+        margin: 0;
+        padding: 30px;
+    }
+     .container {
+                max-width: 1200px;
+                margin: auto;
+                width: 90%;
+            }
+    header{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+                background:rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(10px);
+            }
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+            }
+            .logo a{
+                align-items: center;
+            }
+             .logo img{
+                filter: brightness(220%);
+                height:40px;   
+                width:auto;
+                display:block;
+            }
+            .nav-links{
+                display: flex;
+                list-style: none;
+            }
+            .nav-links li{
+                margin-left: 25px;
+            }
+            .nav-links a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 18px;
+                transition: color 0.3s ease;
+            }
+            .nav-links a:hover{
+                color: #ff6347;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .btn1{
+                display: inline-block;
+                background: #ff6347;
+                color: #fff;
+                padding: 8px 8px;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: 0.3s;
+                font-weight: bold;
+            }
+            .btn1:hover{
+                background: #e5533d;
+                transform: translateY(-3px);
+            }
+
+
+    .section {
+        max-width: 450px;
+        margin: auto;
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+    .form-group input[type="radio"]{
+        width: auto;
+        margin-right: 5px;
+        margin-left: 15px;
+        margin-left: 5%;
+    }
+    .form-group label[for^="contact"] {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: normal;
+    }
+
+    .button {
+        width: 100%;
+        padding: 12px;
+        background: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://miweb.co.in/uploads/website-images/logo-2026-03-29-07-45-32-2095.png" alt="Logo">
+                    </a>
+                </div>
+                    <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="techstack.html">Tech Stack</a></li>
+                    <li><a href="portfolio.html">Protfolio</a></li>
+                    <li><a href="inquiry.html">Inquiry Form</a></li>
+                    <li><a href="careersection.html">Careers</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+    </header>
+    <br><br><br>
+    <div class="section">
+        <h2>Inquiry Form</h2>
+
+        <form action="submit.html">
+            
+            <div class="form-group">
+                <label for="name">Full Name <span style="color: red;">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address <span style="color: red;">*</span> </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number <span style="color: red;">*</span></label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10-digit phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="service">Required Service</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Select Service --</option>
+                    <option>Website Development</option>
+                    <option>Web Application Development</option>
+                    <option>Mobile App Development</option>
+                    <option>Custom Software Development</option>
+                    <option>UI/UX Design</option>
+                    <option>E-Commerce Development</option>
+                    <option>Cloud Solutions</option>
+                    <option>Software Maintenance</option>
+                    <option>Digital Marketing</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Preferred Contact Method <span style="color: red;">*</span></label>
+                <input type="radio" id="contact_email" name="contact_method" value="Email" required>
+                <label for="contact_email">Email</label>
+                <input type="radio" id="contact_phone" name="contact_method" value="Phone">
+                <label for="contact_phone">Phone</label>
+                <input type="radio" id="contact_whatsapp" name="contact_method" value="WhatsApp">
+                <label for="contact_whatsapp">WhatsApp</label>
+            </div>       
+            <button type="submit" class="button">Submit Inquiry</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
