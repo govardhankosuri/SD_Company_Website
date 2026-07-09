@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>careers</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+
+            body {
+                line-height: 1.6;
+                color:black;
+            }
+
+            .career-hero {
+                background: linear-gradient(135deg, #9599ac 0%, rgb(156, 148, 131) 100%);
+                color:black;
+                text-align: center;
+                padding: 100px 20px;
+            }
+
+            .career-hero h1 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            .career-hero p {
+                font-size: 20px;
+
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 60px 20px;
+            }
+
+            .benefits {
+                display:grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 30px;
+                margin: 50px 0;
+            }
+
+            .benefit-card {
+                background-color: antiquewhite;
+                padding: 30px;
+                border-radius: 10px;
+                text-align: center;
+
+            }
+
+            .benefit-card h3 {
+                color:black;
+                margin: 15px 0;
+            }
+
+            .jobs-section h2 {
+                text-align: center;
+                font-size: 35px;
+                margin-bottom: 40px;
+            }
+
+            .job-filters {
+                display:flex;
+                gap: 15px;
+                justify-content: center;
+                margin-bottom: 40px;
+                flex-wrap:wrap;
+            }
+
+            .filter-btn {
+                padding:10px 20px;
+                border:2px solid black;
+                background-color: aliceblue;
+                color:black;
+                border-radius: 25px;
+                cursor: pointer;
+
+            }
+
+            .job-card {
+                background-color: aliceblue;
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 25px;
+                margin-bottom: 20px;
+
+            }
+        
+
+            .job-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                margin-bottom: 15px;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .job-title {
+                font-size: 22px;
+                color:black;
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+            .job-type {
+                background-color: beige;
+                color:black;
+                padding: 5px 15x;
+                border-radius: 20px;
+                font-size: 15px;
+                font-weight: 500;
+                display: inline-block;
+                margin-left: 10px;
+                vertical-align: middle;
+
+            }
+
+            .job-details {
+                color:black;
+                margin-bottom: 15px;
+            }
+
+            .apply-btn {
+                background-color: black;
+                color:aliceblue;
+                padding: 10px 30px;
+                border: none;
+                cursor: pointer;
+                font-size: 15px;
+            }
+
+            .model {
+                display:none;
+                position:fixed;
+                width:100%;
+                height:100%;
+                top:0;
+                left:0;
+                background-color: rgba(0,0,0,0.7);
+                z-index:9999;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .model-content {
+                background-color:aliceblue;
+                padding: 40px;
+                border-radius: 10px;
+                width: 90%;
+                position: relative;
+                max-width: 500px;
+                box-shadow:0 5px 30px rgba(0,0,0,0.4)
+                        }
+
+            .model-content h3 {
+                margin-bottom: 20px;
+            }
+            .model-content
+            
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            .form-group label {
+                display:block;
+                margin-bottom:  5px;
+                font-weight: 500;
+            }
+            
+            
+            .form-group input, .form-group textarea {
+                width:100%;
+                padding: 12px;
+                border: 1px solid black;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+
+            .close-model {
+                float: right;
+                font-size: 30px;
+                cursor: pointer;
+                color:black;
+            }
+             nav{
+            background:#0A3D62;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:18px 60px;
+        }
+
+        .logo{
+            color:white;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:30px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+        }
+
+        nav ul li a:hover{
+            color:#FFD700;
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <nav>
+      <div class="logo">MIW Solutions</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+         <li><a href="Aboutus.html">About Us</a></li>
+          <li><a href="techstack.html">Techstack</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="inquiry.html">Inquiry</a></li>
+        <li><a href="careersection.html">CareerSection</a></li>
+        <li><a href="login.html" class="btn1">Login</a></li>
+      </ul>
+    </nav>
+
+        <section class="career-hero">
+            <h1>join our team</h1>
+            <p>Build the future with us.</br>
+            we are looking for skilled people.</p>
+        </section>
+
+        <section class="container">
+            <h2 style="text-align: center; font-size: 36px; margin-bottom: 20px;">Why work with Us?</h2>
+            <div class="benefits">
+                <div class="benefit-card">
+                <h3> Growth</h3>
+                <p>Fast career growth with learning opportunities and mentorship</p>
+            </div>
+            <div class="benefit-card">
+                <h3> Great Pay</h3>
+                <p>Competitive salary + bonuses + equity options</p>
+            </div>
+
+            <div class="benefit-card">
+                <h3>Remote Work</h3>
+                <p>Work from home or hybrid. Flexible timings</p>
+            </div>
+
+            <div class="benefit-card">
+                <h3>Fun Culture</h3>
+                <p>Team Outings, game nights, and chill work environment</p>
+            </div>
+            </div>
+        </section>
+
+        <section class="container jobs-section">
+            <h2> Open positions</h2>
+
+            <div class="job-filters">
+                <button class="filter-btn" onclick="filterJobs('all')">All</button>
+
+                <button class="filter-btn" onclick="filterJobs('Tech')">Tech</button>
+
+                <button class="filter-btn" onclick="filterJobs('design')">Design</button>
+
+                <button class="filter-btn" onclick="filterJobs('Marketing')">Marketing</button>
+            </div>
+
+            <div id="jobList">
+                <div class="job-card" data-category="tech">
+                    <div class="job-header">
+                        <h3 class="job-title">frontend Developer</h3>
+                        <span class="job-type">Full Time</span>
+                    </div>
+                    <div class="job-details">
+                        <p> Osmanabad / Remote / 0-2 years exp / 6-10 LPA</p>
+                        <p>React, JavaScript, HTML/CSS. Build amazing user interface</p>
+                    </div>
+                    <button class="apply-btn" onclick="openModel('Frontend Developer')">Apply Now</button>
+                </div>
+
+                <div class="job-card" data-category="design">
+                    <div class="job-header">
+                        <h3 class="job-title">UI/UX Designer</h3>
+                        <span class="job-type">Full Time</span>
+                    </div>
+
+                    <div class="job-details">
+                        <p> Pune | Remote | 1-3 years exp| 5-8 LPA</p>
+                        <p>Figma, Adobe XD, Design beautiful & usable products.</p>
+                    </div>
+                    <button class="apply-btn" onclick="openModel('UI/UX Designer')">Apply now</button>
+                </div>
+
+                <div id="jobList">
+                <div class="job-card" data-category="marketing">
+                    <div class="job-header">
+                        <h3 class="job-title">Digital Marketing Executive</h3>
+                        <span class="job-type">Full Time</span>
+                    </div>
+                    <div class="job-details">
+                        <p> Mumbai / Remote / 0-2 years exp / 4-6 LPA</p>
+                        <p>SEO, Social Media, Google Ads.
+                            Grow our brand online.
+                        </p>
+                    </div>
+                    <button class="apply-btn" onclick="openModel('Digital Marketing Executive')">Apply Now</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="applyModel" class="model">
+            <div class="model-content">
+                <span class="close-model" onclick="closeModel()"></span>
+                <h3>Apply for <span id="jobTitle"></span></h3>
+                <form id="applicationForm">
+                    <div class="app-form">
+                   <p> full name:<input type="text" placeholder="Full name" required></br></p>
+                   <p> email:<input type="email" placeholder="email" required></br></p>
+                   <p> phone:<input type="number" placeholder="mobile nmber" required></br></p>
+                   <p> resume:<input type="file" placeholder="resume" required></br></p>
+                   <p> about yourself:<textarea rows="5" placeholder="why should we hire you?"></textarea></br></p>
+
+                    <button type="submit" class="apply-btn" style="width:30%; height:30px">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            function filterJobs(category){
+                const jobs=document.querySelectorAll('.job-card');
+               const buttons=document.querySelectorAll('.filter-btn');
+
+               buttons.forEach(btn => btn.classList.remove('active'));
+               event.target.classList.add('active');
+               
+
+                jobs.forEach(job=> {
+                    if(category === 'all' || job.dataset.category === category){
+                        job.style.display='block';
+                    }
+                    else{
+                        job.style.display='none';
+                    }
+                });
+            }
+
+            function openModel(jobName) {
+                document.getElementById('jobTitle').textContent= jobName;
+
+                document.getElementById('applyModel').style.display='flex';
+            }
+            function closeModel(){
+                document.getElementById('applyModel').style.display ='none';
+            }
+
+            document.getElementById('applicationForm').addEventListener('submit' , function(e){
+                e.preventDefault();
+                alert('application submitted successfully! we will contact you soon.');
+                closeModel();
+                this.reset();
+            });
+
+            window.onclick= function(e) {
+                const model = document.getElementById('applyModel');
+                if(e.target===model)
+                closeModel();
+            }
+    
+        </script>
+    </body>
+</html>
