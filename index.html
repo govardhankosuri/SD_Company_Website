@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>MI Development Solutions</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f8fc;
+            color:#333;
+        }
+
+        /* Navigation */
+
+        nav{
+            background:#0A3D62;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:18px 60px;
+        }
+
+        .logo{
+            color:white;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:30px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+        }
+
+        nav ul li a:hover{
+            color:#FFD700;
+        }
+
+        /* Hero Section */
+
+        .hero{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:80px 60px;
+            background:linear-gradient(to right,#0A3D62,#1B9CFC);
+            color:white;
+        }
+         
+        .hero-text{
+            width:50%;
+        }
+        .hero-text h1{
+            font-size:48px;
+            margin-bottom:20px;
+        }
+
+        .hero-text p{
+            font-size:18px;
+            line-height:1.8;
+            margin-bottom:25px;
+        }
+         .image{
+            border-radius: 30px;
+         }
+        .btn{
+            background:#FFD700;
+            color:#000;
+            padding:14px 28px;
+            text-decoration:none;
+            border-radius:5px;
+            font-weight:bold;
+        }
+
+        .btn:hover{
+            background:white;
+        }
+
+        .btn1{
+            background:#FFD700;
+            color:#000;
+            padding:14px 28px;
+            text-decoration:none;
+            border-radius:5px;
+            font-weight:bold;
+        }
+
+        .btn1:hover{
+            background:white;
+        }
+        .hero img{
+            width:450px;
+        }
+
+        /* Services */
+
+        .services{
+            text-align:center;
+            padding:60px;
+        }
+
+        .services h2{
+            color:#0A3D62;
+            margin-bottom:40px;
+            font-size:36px;
+        }
+
+        .service-container{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .box{
+            background:white;
+            width:300px;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .box h3{
+            color:#1B9CFC;
+            margin-bottom:15px;
+        }
+
+        .box p{
+            line-height:1.7;
+        }
+
+        .box:hover{
+            transform:translateY(-10px);
+            transition:0.5s;
+        }
+
+        /* About */
+
+        .about{
+            background:white;
+            padding:70px;
+            text-align:center;
+        }
+
+        .about h2{
+            color:#0A3D62;
+            margin-bottom:20px;
+        }
+
+        .about p{
+            width:70%;
+            margin:auto;
+            line-height:1.8;
+            font-size:18px;
+        }
+
+        /* Footer */
+
+        footer{
+            background:#0A3D62;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+      <div class="logo">MIW Solutions</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Aboutus.html">About Us</a></li>
+        <li><a href="techstack.html">Techstack</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="inquiry.html">Inquiry</a></li>
+        <li><a href="careersection.html">CareerSection</a></li>
+        <li><a href="loginPage.html" class="btn1">Login</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>MI Web Development Solutions </h1>
+            <p>We Build Innovative, Scalable, and  secure software Solutions
+                to help business grow. Our experienced developers deliver
+                high- quality web applications, mobile applications, cloud solutions
+            </p>
+            <a href="inquiry.html" class="btn">Get Started</a>
+
+        </div>
+        <div>
+            <img src="IMG.JPG" class="image" alt="MI Web Development solutions">
+        </div>
+
+    </section>
+    <section class="services">
+        <h2>Our Services</h2>
+    <div class="service-container">
+        <div class="box">
+            <h3>Web Development</h3>
+            <p> Responsive and Modern websites using HTML, CSS, JavaScript, React, and other technologies</p>
+
+        </div>
+
+        <div class="box">
+            <h3>Mobile App Development</h3>
+            <p> Responsive and Modern websites using HTML, CSS, JavaScript, React, and other technologies</p>
+
+        </div>
+
+        <div class="box">
+            <h3>Cloud Solutions</h3>
+            <p> Responsive and Modern websites using HTML, CSS, JavaScript, React, and other technologies</p>
+
+        </div>
+    </div>
+    </section>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>
+    We Build Innovative, Scalable, and  secure software Solutions
+    to help business grow. Our experienced developers deliver
+    high- quality web applications, mobile applications, cloud solutions 
+        </p>
+    </section>
+    <footer>
+
+ <p>&copy; 2026 MI Web Development Solutions </p>
+    </footer>
+</body>
+</html>
